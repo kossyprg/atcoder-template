@@ -33,12 +33,20 @@ class SegmentTree {
      - 計算量: O(log(n)) 
      - 使用例: Z.set(0, 100);
     ----------------------------------------------------------*/
-    void set(int p, const S &x) {
+    template<typename T>
+    void set(int p, const T &x) {
+        // 型チェック
+        if (!std::is_same<T, S>::value) {
+            throw std::invalid_argument("[SegmentTree] Error: The argument should have the correct type.");
+        }
+
+        // 範囲チェック
         if (p < 0 || p >= _n) {
             printf("[SegmentTree] Error: argument of set function is inappropriate.\n");
             printf("p: %d\n", p);
             return;
         }
+        
         p += _size;
         data[p] = x;
         while(p >= 2) {
