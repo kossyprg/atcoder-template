@@ -28,8 +28,9 @@ class Cumsum {
     long long sum(int l, int r) {
         // l, r は 0-indexed
         if (l > r || r >= N || l < 0) {
-            throw std::invalid_argument("[Cumsum] Error: The argument of sum function are inappropriate.");
+            printf("[Cumsum] Error: The arguments of sum function are inappropriate.\n");
             printf("(l,r) = (%d,%d)\n", l, r);
+            return 0;
         }
         return cumsum[r+1] - cumsum[l];
     }
