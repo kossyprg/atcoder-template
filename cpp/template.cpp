@@ -22,12 +22,13 @@ const int di[] = {-1, 0, 1, 0};
 const int dj[] = {0, -1, 0, 1};
 
 // alias declaration
-using ll  = long long;
-using P   = pair<int,int>;
-using vi  = vector<int>;
-using vvi = vector<vector<int>>;
-using vl  = vector<long long>;
-using vvl = vector<vector<long long>>;
+using ll   = long long;
+using P    = pair<int,int>;
+using vi   = vector<int>;
+using vb   = vector<bool>;
+using vvi  = vector<vector<int>>;
+using vll  = vector<long long>;
+using vvll = vector<vector<long long>>;
 
 int main() {
 
