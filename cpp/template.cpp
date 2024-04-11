@@ -1,4 +1,20 @@
-#include <bits/stdc++.h>
+#include <iostream>  // cin, cout, endl
+#include <string>    // string, to_string, stoi
+#include <vector>    // vector
+#include <algorithm> // min, max, swap, sort, reverse, lower_bound, upper_bound
+#include <utility>   // pair, make_pair
+#include <tuple>     // tuple, make_tuple
+#include <cstdint>   // int64_t, int*_t
+#include <cstdio>    // printf
+#include <map>       // map
+#include <queue>     // queue, priority_queue
+#include <set>       // set
+#include <stack>     // stack
+#include <deque>     // deque
+#include <unordered_map> // unordered_map
+#include <unordered_set> // unordered_set
+#include <bitset>    // bitset
+#include <cctype>    // isupper, islower, isdigit, toupper, tolower
 using namespace std;
 
 // macro
@@ -20,6 +36,7 @@ const int INF = 1001001001;
 const long long LINF = static_cast<long long>(2e18);
 const int di[] = {-1, 0, 1, 0};
 const int dj[] = {0, -1, 0, 1};
+const double pi = 3.141592653589793;
 
 // alias declaration
 using ll   = long long;
