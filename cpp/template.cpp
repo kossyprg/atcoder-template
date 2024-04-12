@@ -29,7 +29,6 @@ template <typename T>
 void chmin(T &a, const T b) { a = min(a, b); }
 void yes() { cout << "Yes" << '\n'; }
 void no()  { cout << "No"  << '\n'; }
-int ctoi(char c) { return c - '0'; }
 
 // constants
 const int INF = 1001001001;
