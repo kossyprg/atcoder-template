@@ -15,6 +15,7 @@
 #include <unordered_set> // unordered_set
 #include <bitset>    // bitset
 #include <cctype>    // isupper, islower, isdigit, toupper, tolower
+#include <cmath>     // sqrt
 using namespace std;
 
 // macro
@@ -32,7 +33,7 @@ void no()  { cout << "No"  << '\n'; }
 
 // constants
 const int INF = 1001001001;
-const long long LINF = static_cast<long long>(2e18);
+const long long LINF = static_cast<long long>(4e18);
 const int di[] = {-1, 0, 1, 0};
 const int dj[] = {0, -1, 0, 1};
 const double pi = 3.141592653589793;
