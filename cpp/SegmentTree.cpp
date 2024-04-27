@@ -9,7 +9,7 @@
 template <class S, S (*op)(S, S), S (*e)()>
 class SegmentTree {
     public:
-    using Func = function<S(S,S)>;
+    using Func = std::function<S(S,S)>;
     
     /*----------------------------------------------------------
      - 機能  : コンストラクタ
@@ -37,7 +37,7 @@ class SegmentTree {
     void set(int p, const T &x) {
         // 型チェック
         if (!std::is_same<T, S>::value) {
-            throw std::invalid_argument("[SegmentTree] Error: The argument should have the correct type.");
+            throw std::invalid_argument("[SegmentTree] Error: The argument of set function should have the correct type.");
         }
 
         // 範囲チェック
