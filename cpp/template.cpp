@@ -16,6 +16,7 @@
 #include <bitset>    // bitset
 #include <cctype>    // isupper, islower, isdigit, toupper, tolower
 #include <cmath>     // sqrt
+#include <numeric>   // gcd
 #include <functional>    // std::function
 using namespace std;
 
