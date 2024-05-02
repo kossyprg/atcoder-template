@@ -58,7 +58,8 @@ inline T div_ceil(T a, T b) {
  - 備考  : -4 % 3 // -1 
            safe_mod(-4, 3) // 2
 ----------------------------------------------------------*/
-long long safe_mod(long long x, long long m) {
+template <typename T, typename U>
+T safe_mod(T x, U m) {
     if (m == 0) {
         std::cerr << "[safe_mod] Error: Division by zero." << std::endl;
         return 0;
