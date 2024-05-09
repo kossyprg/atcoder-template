@@ -171,3 +171,43 @@ long long Combination(long long n, long long r, long long m)
     long long ans = Division(numerator, denominator, m);
     return ans;
 }
+
+long long baseN_to_long(const std::string& x, const long long n) {
+    long long ans = 0, p = 1;
+    int m = (int)x.size();
+    for (int i = m - 1; i >= 0; i--) {
+        char c = std::toupper(x[i]);
+        long long value;
+        
+        if (c >= '0' && c <= '9') {
+            value = c - '0';
+        } else if (c >= 'A' && c <= 'F') {
+            value = 10 + (c - 'A');
+        } else {
+            throw std::invalid_argument("Invalid character in the input string");
+        }
+
+        ans += value * p;
+        p *= n;
+    }
+    return ans;
+}
+
+std::string long_to_baseN(long long x, const long long n) {
+    std::string ans;
+    if (x == 0) return "0";
+
+    while (x > 0) {
+        int digit = x % n;
+        char c;
+        if (digit < 10) {
+            c = '0' + digit;
+        } else {
+            c = 'A' + (digit - 10);
+        }
+        ans = c + ans;
+        x /= n;
+    }
+
+    return ans;
+}

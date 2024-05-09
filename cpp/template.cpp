@@ -40,16 +40,16 @@ const int dj[] = {0, -1, 0, 1};
 const double pi = 3.141592653589793;
 
 // alias declaration
-using ll    = long long;
-using P     = pair<int,int>;
-using vi    = vector<int>;
-using vb    = vector<bool>;
-using vs    = vector<string>;
-using vvi   = vector<vector<int>>;
-using vvvi  = vector<vector<vector<int>>>;
-using vll   = vector<long long>;
-using vvll  = vector<vector<long long>>;
-using vvvll = vector<vector<vector<long long>>>;
+using ll   = long long;
+using P    = pair<int,int>;
+using vi   = vector<int>;
+using vb   = vector<bool>;
+using vs   = vector<string>;
+using vvi  = vector<vector<int>>;
+using vvvi = vector<vector<vector<int>>>;
+using vl   = vector<long long>;
+using vvl  = vector<vector<long long>>;
+using vvvl = vector<vector<vector<long long>>>;
 
 int main() {
 
