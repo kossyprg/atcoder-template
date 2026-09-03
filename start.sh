@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cp -n ~/atcoder/template.cpp a.cpp
 cp -n ~/atcoder/template.cpp b.cpp
 cp -n ~/atcoder/template.cpp c.cpp

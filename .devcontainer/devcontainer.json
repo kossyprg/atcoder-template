@@ -1,0 +1,17 @@
+{
+  "name": "AtCoder C++23 (GCC 15.2.0)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true,
+  "postCreateCommand": "ln -sf \"${containerWorkspaceFolder}/template.cpp\" ~/atcoder/template.cpp",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}
