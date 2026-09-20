@@ -38,7 +38,7 @@ class SieveOfEratosthenes {
     ----------------------------------------------------------*/
     bool isPrime(int x) {
         if (x < 0 || _n < x) {
-            std::cout << "[SieveOfEratosthenes] Error: argument of isPrime is inappropriate." << std::endl;
+            std::cerr << "[SieveOfEratosthenes] Error: argument of isPrime is inappropriate." << std::endl;
             return false;
         }
         return factor[x] == x;
@@ -50,12 +50,12 @@ class SieveOfEratosthenes {
      - 引数  : int x : 調べる値 (x >= 2)
      - 戻り値: x の素因数分解を格納した配列
      - 備考  : result[i] <= result[i+1] が成立
-     - 計算量: O(logn) 
+     - 計算量: O(logN) 
     ----------------------------------------------------------*/
     std::vector<int> factorize(int x) {
         std::vector<int> result;
         if (x < 2 || _n < x) {
-            std::cout << "[SieveOfEratosthenes] Error: argument of factorize is inappropriate." << std::endl;
+            std::cerr << "[SieveOfEratosthenes] Error: argument of factorize is inappropriate." << std::endl;
             return result;
         }
 

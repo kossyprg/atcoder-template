@@ -23,7 +23,8 @@ using namespace std;
 
 // macro
 #define rep(i, n) for (int i = 0; i < (int)(n); i++)
-#define reps(i, a, b) for (int i = (a); i <= (int)(b); i++)
+#define reps(i, n1, n2) for (int i = (n1); i <= (int)(n2); i++)
+#define debugVar(x) cout << #x << " : " << x << '\n'
 
 // functions
 template <typename T> void chmax(T &a, const T b) { a = max(a, b); }
