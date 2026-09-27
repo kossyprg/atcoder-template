@@ -1,5 +1,6 @@
 template<typename T>
 void printArray(const std::vector<T>& arr) {
+    std::cerr << "[printArray]" << " ";
     for (const auto& element : arr) {
         std::cerr << element << " ";
     }
@@ -8,6 +9,7 @@ void printArray(const std::vector<T>& arr) {
 
 template<typename T>
 void printMatrix(const std::vector<std::vector<T>>& matrix, bool useDelimiter = true, const char delimiter = ' ') {
+    std::cerr << "[printMatrix]" << " ";
     for (const auto& row : matrix) {
         for (const auto& element : row) {
             std::cerr << element;

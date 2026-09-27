@@ -11,7 +11,7 @@
 
 1. VS Code を右クリック、「New Window」を押下
 2. 「Open Folder」から本フォルダを開く
-3. Ctrl + Shift + P で `Dev Containers: Reopen in Container` を実行する。
+3. Ctrl + Shift + P で `Dev Containers: Rebuild Without Cache and Reopen in Container` を実行する。
 
 ### ABCを始めるとき
 
